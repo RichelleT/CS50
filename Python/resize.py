@@ -13,3 +13,7 @@ width, heigh = inimage.size
 outimage = inimage.resize((width * n, height * n))
 
 outimage.save(outfile)
+
+# To resize small images
+# python resize.py n image.extension out.originalImageExtension
+# n = *number of resize 
