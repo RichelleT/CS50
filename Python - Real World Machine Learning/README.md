@@ -1,5 +1,7 @@
 Notes and practices I have written or made from the book,
 
+
+
 Python: Real World Machine Learning
 
 By Luca Massaron, Alberto Boschetti and Prateek Joshi
