@@ -6,6 +6,6 @@ y = get_float("y: ")
 
 z = x + y
 
-print(f"x / y = {z:.3f}")
+print(f"x / y = {z:.4f}")
 
 # able to modify '3f' to any other number for the about of numbers behind the '.'
