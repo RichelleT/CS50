@@ -16,3 +16,5 @@ print("\nMin max scaled data =", data_scaled)
 # Normalization
 data_normalized = preprocessing.normalize(data, norm='l1')
 print("\nl1 normalized data =", data_normalized)
+
+# Binarization
