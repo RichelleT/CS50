@@ -18,3 +18,11 @@ data_normalized = preprocessing.normalize(data, norm='l1')
 print("\nl1 normalized data =", data_normalized)
 
 # Binarization
+data_binarized = preprocessing.binarizer(threshold=1.4).transform(data)
+print("\nBinarized data=", data_binarized)
+
+# One Hot Encoding
+encoder = preprocessing.OneHotEncoder()
+encoder.fit([[0, 2, 1, 12], [1, 3, 5, 3], [2, 3, 2, 12], [1, 2, 4, 3]])
+encoded_vector = encoder.transform([[2, 3, 5, 3]]).toarray()
+print("\nEncoded Vector=", encoded_vector)
