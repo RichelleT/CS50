@@ -1,7 +1,8 @@
-# CS50
+# Python practices.
+
 This is a repo that consists of the files/code/practices 
-that I have made for Harvard's CS50 course
-and also for/from practice books.
+that I have made from Harvard's CS50 course
+and also from practice books.
 
 Each folder will be named after the specific course it is based on
 
