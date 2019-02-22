@@ -14,5 +14,5 @@ def get_positive_int(prompt):
     return n
 
 
-if __main__ == "__main__":
+if __name__ == "__main__":
     main()
