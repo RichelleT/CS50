@@ -1,7 +1,9 @@
 from cs50 import get_int 
 
+#gets number or int from user/keyboard
 x = get_int("x: ")
 
+#gets number/int from user/keyboard
 y = get_int("y: ")
 
 if x < y:
