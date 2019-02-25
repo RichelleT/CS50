@@ -3,6 +3,7 @@ import numpy as np
 from sklearn import linear_model
 import matplotlib.pyplot as plt
 import _pickle as pickle
+from sklearn.preprocessing import PolynomialFeatures
 
 filename = sys.argv[1]
 x = []
@@ -72,3 +73,12 @@ print("Mean squared error=", round(sm.mean_squared_error(y_test, y_test_pred_rid
 print("Median absolute error=", round(sm.median_absolute_error(y_test, y_test_pred_ridge), 2))
 print("Explained variance score=", round(sm.explained_variance_score(y_test, y_test_pred_ridge), 2))
 print("R2 score=", round(sm.r2_score(y_test, y_test_pred_ridge), 2))
+
+polynomial = PolynomialFeatures(degree=3)
+x_train_transformed = polynomial.fit_transform(x_train)
+
+datapoint = [0.39, 2.78, 7.11]
+poly_datapoint = polynomial.fit_transform(datapoint)
+poly_linear_model = linear_model.LinearRegression()
+poly_linear_model.fit(x_train_transformed, y_train)
+print("\nLinear regression=", linear_regressor.predict(datapoint)[0])
