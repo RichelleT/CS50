@@ -5,11 +5,11 @@ Notes and practices I have written or made from the book,
 
 Python: Real World Machine Learning
 
-By Luca Massaron, Alberto Boschetti and Prateek Joshi
+By Prateek Joshi, John Hearty, Bastiaan Sjardin, Luca Massaron, Alberto Boschetti
 
 RELEASED: Nov 14, 2016
 
-ISBN: 9781787120679
+ISBN: 1786469677, 9781786469670
 
 at
 
