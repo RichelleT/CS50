@@ -1,10 +1,5 @@
 # Python - Real World Machine Learning
 
-Notes and practices I have written or made from the book,
-
-
-Python: Real World Machine Learning
-
 By Prateek Joshi, John Hearty, Bastiaan Sjardin, Luca Massaron, Alberto Boschetti
 
 RELEASED: Nov 14, 2016
