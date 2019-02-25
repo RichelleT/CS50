@@ -7,3 +7,11 @@ RELEASED: Jan 27, 2017
 
 
 ISBN: 9781786469670
+
+at
+
+https://books.google.com.my/books?id=O1AoDwAAQBAJ
+
+or
+
+https://www.scribd.com/book/382517197/Artificial-Intelligence-with-Python
