@@ -80,5 +80,3 @@ poly_datapoint = polynomial.fit_transform(datapoint)
 poly_linear_model = linear_model.LinearRegression()
 poly_linear_model.fit(x_train_transformed, y_train)
 print("\nLinear regression=", linear_regressor.predict(datapoint)[0])
-
-# fix needed for code at line 8
