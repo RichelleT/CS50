@@ -52,8 +52,6 @@ plt.plot(x_test, y_test_pred, color='black', linewidth=4)
 plt.title('Test Data')
 plt.show()
 
-# new / regressor accuracy
-
 output_model_file = 'saved_model.pkl'
 with open(output_model_file, 'w') as f:
     pickle.dump(linear_regressor, f)
