@@ -38,10 +38,11 @@ print("Explained variance score=", round(evs, 2))
 
 
 def plot_feature_importances(feature_importances, title, feature_names):
+    feature_importances = 100.0 * (feature_importances / max(feature_importances))
 
 
-feature_importances = 100.0 * (feature_importances / max(feature_importances))
 index_sorted = np.flipud(np.argsort(feature_importances))
+
 pos = np.arange(index_sorted.shape[0]) + 0.5
 
 
