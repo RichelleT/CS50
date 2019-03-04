@@ -29,3 +29,11 @@ data_scaled_minmax = data_scaler_minmax.fit_transform(input_data)
 
 # print function for min max scaling
 print("\nMinimum and Maximum scaled data =\n", data_scaled_minmax)
+
+# normalizing data
+data_normalized_l1 = preprocessing.normalize(input_data, norm='l1')
+data_normalized_l2 = preprocessing.normalize(input_data, norm='l2')
+
+# print function for normalizing data
+print("\nL1 Normalized data:\n", data_normalized_l1)
+print("\nL2 Normalized Data:\n", data_normalized_l2)
