@@ -44,10 +44,9 @@ def plot_feature_importances(feature_importances, title, feature_names):
     plot_feature_importances(dt_regressor.feature_importances_, 'Decision Tree Regressor', housing_data.feature_names)
     plot_feature_importances(ab_regressor.feature_importances_, 'Adaboost regressor', housing_data.feature_names)
 
-
-plt.figure()
-plt.bar(pos, feature_importances[index_sorted], align='center')
-plt.xticks(pos, feature_names[index_sorted])
-plt.ylabel('Relative Importance')
-plt.title(title)
-plt.show()
+    plt.figure()
+    plt.bar(pos, feature_importances[index_sorted], align='center')
+    plt.xticks(pos, feature_names[index_sorted])
+    plt.ylabel('Relative Importance')
+    plt.title(title)
+    plt.show()
