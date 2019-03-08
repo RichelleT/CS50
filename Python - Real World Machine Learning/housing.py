@@ -39,15 +39,11 @@ print("Explained variance score=", round(evs, 2))
 
 def plot_feature_importances(feature_importances, title, feature_names):
     feature_importances = 100.0 * (feature_importances / max(feature_importances))
+    index_sorted = np.flipud(np.argsort(feature_importances))
+    pos = np.arange(index_sorted.shape[0]) + 0.5
+    plot_feature_importances(dt_regressor.feature_importances_, 'Decision Tree Regressor', housing_data.feature_names)
+    plot_feature_importances(ab_regressor.feature_importances_, 'Adaboost regressor', housing_data.feature_names)
 
-
-index_sorted = np.flipud(np.argsort(feature_importances))
-
-pos = np.arange(index_sorted.shape[0]) + 0.5
-
-
-plot_feature_importances(dt_regressor.feature_importances_, 'Decision Tree Regressor', housing_data.feature_names)
-plot_feature_importances(ab_regressor.feature_importances_, 'Adaboost regressor', housing_data.feature_names)
 
 plt.figure()
 plt.bar(pos, feature_importances[index_sorted], align='center')
