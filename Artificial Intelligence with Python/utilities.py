@@ -15,4 +15,13 @@ def visualize_classifier(classifier, X, y):
 
     plt.figure()
     plt.pcolormesh(x_vals, y_vals, output, cmap=plt.cm.gray)
+
     plt.scatter(X[:, 0], X[:, 1], c=y, s=75, edgecolors='black', linewidth=1, cmap=plt.cm.Paired)
+
+    plt.xlim(x_vals.min(), x_vals.max())
+    plt.ylim(y_vals.min(), y_vals.max())
+
+    plt.xticks((np.arange(int(X[:, 0].min() - 1), int(X[:, 0].max() + 1), 1.0)))
+    plt.yticks((np.arange(int(X[:, 1].min() - 1), int(X[:, 1].max() + 1), 1.0)))
+
+    plt.show()
