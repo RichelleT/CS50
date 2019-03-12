@@ -9,3 +9,10 @@ def visualize_classifier(classifier, X, y):
 
     # defining the step size to use in graphing or plotting the mesh grid
     mesh_step_size = 0.01
+    x_vals, y_vals = (np.arange(min_x, max_x, mesh_step_size), np.arange(min_y, max_y, mesh_step_size))
+    output = classifier.predict(np.c_[x_vals.ravel(), y_vals.ravel()])
+    output = output.reshape(x_vals.shape)
+
+    plt.figure()
+    plt.pcolormesh(x_vals, y_vals, output, cmap=plt.cm.gray)
+    plt.scatter(X[:, 0], X[:, 1], c=y, s=75, edgecolors='black', linewidth=1, cmap=plt.cm.Paired)
