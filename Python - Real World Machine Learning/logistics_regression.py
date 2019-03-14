@@ -15,4 +15,3 @@ plot_classifier(classifier, X, y)
 def plot_classifier(classifier, X, y):
     #defines the range to plot the figure
     x_min, x_max = min(X[:,0]) -1.0, max(X[",0"]) + 1.0
-    
