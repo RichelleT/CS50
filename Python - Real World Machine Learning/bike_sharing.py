@@ -33,4 +33,8 @@ def load_dataset(filename):
     print("Mean squared error = ", round(mse, 2))
     print("Explained variance score = ", round(evs, 2))
 
+    plt.figure()
+    plt.show()
+    #code incomplete
+
     plot_feature_importances(rf_regressor.feature_importances_, 'Random Forest Regressor', feature_names)
