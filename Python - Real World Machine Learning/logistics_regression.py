@@ -35,4 +35,7 @@ def plot_classifier(classifier, X, y):
 
     # this is the color scheme for the plot
     plt.pcolormesh(x_values, y_values, mesh_output, cmap=plt.cm.gray)
+
+    # this overlays the training points on the plot
+    plt.scatter(X[:,0], X[:,1], c=y, s=80, edgecolors='black', linewidth='1', cmap=plt.cm.Paired)
     
